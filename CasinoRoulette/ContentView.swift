@@ -60,7 +60,7 @@ struct ContentView: View {
                              Sector(number: 0, color: .green)]
     
     func getAngle(angle: Double) -> Double {
-        let deg = 360 - angle.truncatingRemainder(dividingBy: 360)
+        let deg = fullTurn - angle.truncatingRemainder(dividingBy: fullTurn)
         return deg
     }
     
